@@ -4,7 +4,7 @@ const persona = {
   clave: 'Ironman'
 };
 
-const locve =  ({ clave, nombre, edad, rango = 'Capitan'}) => {
+const locve =  ({ clave, nombre, edad, rango = 'Captain'}) => {
 
   return {
     nombreClave: clave,
