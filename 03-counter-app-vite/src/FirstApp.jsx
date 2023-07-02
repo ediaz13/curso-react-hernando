@@ -1,5 +1,8 @@
 export const FirstApp = () => {
   return (
-    <h1>FirstApp</h1>
+    <>
+      <h1>New terminal</h1>
+      <p>Ctrl + shift + c</p>
+    </>
   )
 }
