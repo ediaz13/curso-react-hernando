@@ -1,7 +1,7 @@
-export const FirstApp = () => {
+export const FirstApp = ( { title } ) => {
   return (
     <>
-      <h1>New terminal</h1>
+      <h1>{ title }</h1>
       <p>Ctrl + shift + c</p>
     </>
   )

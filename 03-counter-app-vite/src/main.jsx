@@ -7,6 +7,6 @@ import './styles.css'
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        <FirstApp />
+        <FirstApp title= "New terminal" />
     </React.StrictMode>
 );
