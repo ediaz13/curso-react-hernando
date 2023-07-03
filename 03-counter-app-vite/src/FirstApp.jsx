@@ -1,3 +1,5 @@
+import PropTypes  from "prop-types";
+
 export const FirstApp = ( { title } ) => {
   return (
     <>
@@ -5,4 +7,9 @@ export const FirstApp = ( { title } ) => {
       <p>Ctrl + shift + c</p>
     </>
   )
+}
+
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired
 }
