@@ -1,10 +1,15 @@
 import PropTypes  from "prop-types";
 
-export const FirstApp = ( { title } ) => {
+export const FirstApp = ( { title, subtitle, name } ) => {
   return (
     <>
+      
       <h1>{ title }</h1>
-      <p>Ctrl + shift + c</p>
+      
+      <h2>{ subtitle }</h2>
+      
+      {/*<p>Ctrl + shift + c</p>*/}
+      <p>{ name }</p>
     </>
   )
 }
@@ -16,5 +21,7 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-  title: "No usar titlulo"
+  title: "No usar titlulo",
+  subtitle: "No usar subtitulo",
+  name: "No usar name"
 }
