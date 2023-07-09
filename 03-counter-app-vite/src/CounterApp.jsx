@@ -34,6 +34,7 @@ export const CounterApp = ( { value } ) => {
 }
 
 CounterApp.propTypes = {
-    counter: PropTypes.number.isRequired
-  }
-  
+    value: PropTypes.number.isRequired
+}
+
+
