@@ -1,15 +1,22 @@
 import React, { useState } from "react";
 
-export const AddCategory = () => {
-    const [inputValue, setinputValue] = useState("Mogul");
+export const AddCategory = ( { setCategories } ) => {
+    
+    const [inputValue, setinputValue] = useState( );
 
-    const onInputChange = (target) => {
+    const onInputChange = ( { target } ) => {
         setinputValue(target.value);
     };
-
+    
+    
+    
     const onSubmit = ( event ) => {
         event.preventDefault();
-        console.log(inputValue)
+        if (inputValue.trim().length <= 1) return;
+
+        setCategories( categories => [ inputValue, ...categories ]);
+
+        setinputValue('');
     };
 
     return (
@@ -18,7 +25,7 @@ export const AddCategory = () => {
                 type="text"
                 placeholder="Buscar gifs"
                 value={ inputValue }
-                onChange={( event ) => onInputChange}
+                onChange={ onInputChange}
             />
         </form>
     );
