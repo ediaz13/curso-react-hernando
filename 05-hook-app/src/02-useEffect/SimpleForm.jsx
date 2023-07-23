@@ -19,8 +19,15 @@ export const SimpleForm = () => {
 
   useEffect( () => {
     console.log('useEffect called!');
-  });
+  }, []);
 
+  useEffect( () => {
+    console.log('formState changed!');
+  }, [ formState ]);
+
+  useEffect( () => {
+    console.log('email changed!');
+  }, [ email ]);
 
   return (
     <>
@@ -40,7 +47,7 @@ export const SimpleForm = () => {
             type="email"
             className="form-control mt-2"
             placeholder="E-mail"
-            name="username"
+            name="email"
             value={ email }
             onChange={ onInputChange }
         />
